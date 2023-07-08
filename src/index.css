@@ -1,0 +1,111 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+}
+
+/* navbar */
+.navbar {
+	padding: 2rem 0;
+}
+
+.brand-name {
+	text-align: center;
+	margin: 0;
+	transform: scaleY(1.1);
+}
+
+.brand-name a {
+	font-family: 'Source Code Pro', monospace;
+	letter-spacing: 4px;
+	text-decoration: none;
+	color: #5ABF7E;
+	margin: 0;
+	font-weight: bold;
+	font-size: 2rem;
+	text-shadow: 0 0 100px #1b3926;
+}
+
+.nav-links {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	margin: 1.5rem 0;
+}
+
+.nav-links li {
+	display: inline-block;
+	width: 8rem;
+	padding: 1rem 0;
+}
+
+.nav-links a {
+	text-decoration: none;
+	color: #1b3926;
+	text-transform: capitalize;
+	font-family: 'Tajawal', sans-serif;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-size: 0.8rem;
+	padding: 1rem;
+}
+
+/* back top */
+.container {
+	position: relative;
+	overflow: hidden;
+}
+
+.back-top {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.3s;
+	border: none;
+	background: transparent;
+	font-size: 2rem;
+	padding: 12px;
+	display: grid;
+	place-items: center;
+	color: #1b3926;
+}
+
+.show-back-top {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* search box */
+.search-box {
+	padding: 2rem 0;
+	text-align: center;
+}
+
+.search-field {
+	border: none;
+	box-shadow: 0 0px 0px 1px #aaa;
+	padding: 3px 8px;
+	border-radius: 3px;
+}
+
+.search-field:focus {
+	outline-color: #000;
+}
+
+.search-btn {
+	padding: 4px 8px;
+	margin-left: 5px;
+	background-color: #0094FE;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	font-family: 'Source Code Pro', monospace;
+}
