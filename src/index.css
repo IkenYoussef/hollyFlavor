@@ -86,11 +86,13 @@ html {
 	display: grid;
 	place-items: center;
 	color: #0094fe;
+	transform: translateY(100%);
 }
 
 .show-back-top {
 	opacity: 1;
 	visibility: visible;
+	transform: translateY(0);
 }
 
 /* search box */
@@ -120,7 +122,7 @@ html {
 	display: grid;
 	border-radius: 5px;
 	overflow: hidden;
-	box-shadow: 0 3px 8px 0px #ccc;
+	box-shadow: 0 2px 3px 0px #eee;
 	font-family: 'Tajawal', sans-serif;
 }
 
