@@ -49,7 +49,7 @@ const Home = () => {
 						value={value} 
 						onChange={handleChange}
 					/>
-					<button type="submit" className="search-btn">
+					<button type="submit" className="search-btn btn">
 						Search
 					</button>
 				</form>
