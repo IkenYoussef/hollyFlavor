@@ -5,8 +5,18 @@ html {
 	scroll-behavior: smooth;
 }
 
-body {
+* {
 	margin: 0;
+}
+
+/* global */
+.btn {
+	padding: 4px 8px;
+	background-color: #0094FE;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	font-family: 'Source Code Pro', monospace;
 }
 
 /* navbar */
@@ -101,11 +111,64 @@ body {
 }
 
 .search-btn {
-	padding: 4px 8px;
 	margin-left: 5px;
-	background-color: #0094FE;
-	border: none;
-	border-radius: 3px;
-	color: #fff;
+}
+
+/* drink */
+.drink {
+	margin: 4rem 2rem;
+	display: grid;
+	border-radius: 5px;
+	overflow: hidden;
+	box-shadow: 0 3px 8px 0px #ccc;
+	font-family: 'Tajawal', sans-serif;
+}
+
+.drink img {
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.info-wrap {
+	padding: 1rem;
+	background-color: #eff9f2;
+}
+
+.drinks .name {
+	font-size: 1.5rem;
+	letter-spacing: 2px;
+	font-weight: lighter;
+	color: #6bc58b;
+}
+
+.glass {
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+	color: #aaa;
+	text-transform: lowercase;
+	margin-top: 16px;
+}
+
+.alcoholic {
+	font-weight: lighter;
+	letter-spacing: 2px;
+	color: #888;
+	font-size: 0.9rem;
 	font-family: 'Source Code Pro', monospace;
+	margin-top: 8px;
+}
+
+.details-btn {
+	background-color: #0094fe;
+	color: #fff;
+	font-family: 'Tajawal', sans-serif;
+	letter-spacing: 2px;
+	font-size: .9rem;
+	padding: 6px 14px;
+	margin-top: 16px;
+}
+
+.details-btn a {
+	text-decoration: none;
+	color: inherit;
 }

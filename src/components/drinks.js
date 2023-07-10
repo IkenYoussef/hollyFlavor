@@ -10,11 +10,13 @@ const Drinks = () => {
 
 	// getting drinks
 	const drinks = getInfo(data)
+	
 	// in case loading
 	if (loading) {
 		return <Loading/>
 	}
 
+	// in case error
 	if (error) {
 		return <section className="drinks-error">
 			<h3>sorry! couldn't load cocktails...</h3>
@@ -37,14 +39,16 @@ const Drinks = () => {
 					} = drink
 					return <article key={id} className="drink">
 						<img src={image} alt={name} />
-						<h2 className="name">{name}</h2>
-						<p className="glass">{glass}</p>
-						<h4 className="alcoholic">
-							{alcoholic}
-						</h4>
-						<button className="details-btn">
-							<Link to={`cocktails/${id}`}>Details</Link>
-						</button>
+						<div className="info-wrap">
+							<h2 className="name">{name}</h2>
+							<p className="glass">{glass}</p>
+							<h4 className="alcoholic">
+								{alcoholic}
+							</h4>
+							<button className="details-btn btn">
+								<Link to={`cocktails/${id}`}>Details</Link>
+							</button>
+						</div>
 					</article>
 				})
 				:
