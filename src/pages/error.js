@@ -5,7 +5,7 @@ const ErrorPage = () => {
 	return (
 		<section>
 			<h2>Oops! it's a Dead End</h2>
-			<button className="home-btn">
+			<button className="home-btn btn">
 				<Link to="/">Back Home</Link>
 			</button>
 		</section>

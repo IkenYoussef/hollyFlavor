@@ -7,6 +7,7 @@ html {
 
 * {
 	margin: 0;
+	font-family: 'Tajawal', sans-serif;
 }
 
 /* global */
@@ -16,7 +17,21 @@ html {
 	border: none;
 	border-radius: 3px;
 	color: #fff;
-	font-family: 'Source Code Pro', monospace;
+}
+
+.btn a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.home-btn {
+	font-size: 0.9rem;
+	letter-spacing: 1px;
+	padding: 6px 12px;
+}
+
+img {
+	max-width: 100%;
 }
 
 /* navbar */
@@ -59,7 +74,6 @@ html {
 	text-decoration: none;
 	color: #1b3926;
 	text-transform: capitalize;
-	font-family: 'Tajawal', sans-serif;
 	letter-spacing: 2px;
 	font-weight: bold;
 	font-size: 0.8rem;
@@ -78,7 +92,7 @@ html {
 	right: 0;
 	opacity: 0;
 	visibility: hidden;
-	transition: 0.3s;
+	transition: 0.3s ease-out;
 	border: none;
 	background: transparent;
 	font-size: 2rem;
@@ -114,6 +128,7 @@ html {
 
 .search-btn {
 	margin-left: 5px;
+	font-family: 'Source Code Pro';
 }
 
 /* drink */
@@ -123,12 +138,6 @@ html {
 	border-radius: 5px;
 	overflow: hidden;
 	box-shadow: 0 2px 3px 0px #eee;
-	font-family: 'Tajawal', sans-serif;
-}
-
-.drink img {
-	max-width: 100%;
-	object-fit: cover;
 }
 
 .info-wrap {
@@ -161,14 +170,57 @@ html {
 .details-btn {
 	background-color: #0094fe;
 	color: #fff;
-	font-family: 'Tajawal', sans-serif;
 	letter-spacing: 2px;
 	font-size: .9rem;
 	padding: 6px 14px;
-	margin-top: 16px;
+	margin-top: 24px;
 }
 
-.details-btn a {
-	text-decoration: none;
-	color: inherit;
+/* single drink page */
+.single-drink-page {
+	text-align: center;
+	overflow: hidden;
+}
+
+.single-drink-page .name {
+	font-size: 1.5rem;
+	letter-spacing: 1px;
+	margin-top: 2rem;
+}
+
+/* single drink */
+.single-drink {
+	margin: 1rem;
+	box-shadow: 0 2px 3px 0px #eee;
+	display: grid;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.single-drink-info {
+	padding: 1rem;
+}
+
+.property {
+	text-align: left;
+	padding: 10px 0;
+}
+
+.prop-name {
+	font-size: 1rem;
+	display: inline-block;
+	background-color: #5abf7e;
+	color: #fff;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-family: 'Source Code Pro', monospace;
+	letter-spacing: 2px;
+}
+
+.prop-value {
+	font-size: 1rem;
+	display: inline;
+	padding-left: 5px;
+	font-weight: lighter;
+	line-height: 2rem;
 }
