@@ -207,20 +207,20 @@ img {
 }
 
 .prop-name {
-	font-size: 1rem;
+	font-size: 0.8rem;
 	display: inline-block;
 	background-color: #5abf7e;
 	color: #fff;
 	padding: 5px 10px;
-	border-radius: 5px;
-	font-family: 'Source Code Pro', monospace;
+	border-radius: 3px;
 	letter-spacing: 2px;
 }
 
 .prop-value {
-	font-size: 1rem;
+	font-size: 0.9rem;
 	display: inline;
 	padding-left: 5px;
 	font-weight: lighter;
 	line-height: 2rem;
+	color: #555;
 }
