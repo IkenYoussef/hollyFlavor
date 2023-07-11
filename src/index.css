@@ -190,15 +190,17 @@ img {
 
 /* single drink */
 .single-drink {
-	margin: 1rem;
-	box-shadow: 0 2px 3px 0px #eee;
+	margin: 1.5rem;
 	display: grid;
-	border-radius: 5px;
 	overflow: hidden;
 }
 
+.single-drink img {
+	border-radius: 5px;
+}
+
 .single-drink-info {
-	padding: 1rem;
+	padding: 1rem 0;
 }
 
 .property {
@@ -220,7 +222,20 @@ img {
 	font-size: 0.9rem;
 	display: inline;
 	padding-left: 5px;
-	font-weight: lighter;
 	line-height: 2rem;
-	color: #555;
+}
+
+/* about */
+.about {
+	padding: 0 1rem;
+}
+
+.about-title {
+	text-shadow: -4px -8px 5px #0094fe;
+}
+
+.about-desc {
+	padding: 1rem 0;
+	color: #001e33;
+	line-height: 1.5rem;
 }
