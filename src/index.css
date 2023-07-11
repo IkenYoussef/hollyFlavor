@@ -231,7 +231,7 @@ img {
 }
 
 .about-title {
-	text-shadow: -4px -8px 5px #0094fe;
+	text-shadow: 0 0 20px #0094fe;
 }
 
 .about-desc {
