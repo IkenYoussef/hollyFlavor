@@ -3,8 +3,8 @@ import React from 'react'
 const About = () => {
 	return (
 		<section className="about">
-			<h2>About Us</h2>
-			<p>Introducing "HollyFlavor
+			<h2 className="about-title">About Us</h2>
+			<p className="about-desc">Introducing "HollyFlavor
 				", the ultimate party sidekick app that fetches 
 				cocktails from the hilarious Cocktails DB API.
 				 With a flick of your finger,
