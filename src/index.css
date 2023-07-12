@@ -231,11 +231,16 @@ img {
 }
 
 .about-title {
+<<<<<<< HEAD
 	text-shadow: 0 0 20px #0094fe;
+=======
+/*	text-shadow: 0px 1px 0px #004a7f;*/
+	color: #0085e5;
+>>>>>>> b11c8b29e9d00e56a8070e457672947c77d6c867
 }
 
 .about-desc {
 	padding: 1rem 0;
-	color: #001e33;
+	color: #004a7f;
 	line-height: 1.5rem;
 }
