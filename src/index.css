@@ -72,7 +72,7 @@ img {
 
 .nav-links a {
 	text-decoration: none;
-	color: #1b3926;
+	color: #aaa;
 	text-transform: capitalize;
 	letter-spacing: 2px;
 	font-weight: bold;
@@ -231,8 +231,6 @@ img {
 }
 
 .about-title {
-	text-shadow: 0 0 20px #0094fe;
-/*	text-shadow: 0px 1px 0px #004a7f;*/
 	color: #0085e5;
 }
 
@@ -240,4 +238,11 @@ img {
 	padding: 1rem 0;
 	color: #004a7f;
 	line-height: 1.5rem;
+}
+
+/* active */
+
+.active {
+	color: #1b3926 !important;
+	background-size: 100%;
 }
