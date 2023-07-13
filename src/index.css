@@ -231,7 +231,8 @@ img {
 }
 
 .about-title {
-	color: #0085e5;
+	color: #fff;
+	text-shadow: 0 0 5px #aaa;
 }
 
 .about-desc {
