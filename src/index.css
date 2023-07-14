@@ -231,13 +231,12 @@ img {
 }
 
 .about-title {
-	color: #fff;
-	text-shadow: 0 0 5px #aaa;
+	color: #5abf7a;
 }
 
 .about-desc {
 	padding: 1rem 0;
-	color: #555;
+	color: #000;
 	line-height: 1.5rem;
 }
 
@@ -246,4 +245,24 @@ img {
 .active {
 	color: #1b3926 !important;
 	background-size: 100%;
+}
+
+/* empty */
+.empty {
+	text-align: center;
+	padding: 2rem 0;
+}
+
+.empty h3 {
+	font-size: 1rem;
+	font-weight: lighter;
+	letter-spacing: 2px;
+	color: #555;
+}
+
+.re-fetch {
+	font-size: .9rem;
+	padding: 6px 12px;
+	margin-top: 2rem;
+	letter-spacing: 1px;
 }

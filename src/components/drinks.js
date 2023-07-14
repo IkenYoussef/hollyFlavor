@@ -5,7 +5,7 @@ import Loading from './loading'
 import {Link} from 'react-router-dom'
 
 const Drinks = () => {
-	const {url, getInfo} = useGlobalContext()
+	const {url, getInfo, updateUrl} = useGlobalContext()
 	const {data, loading, error} = useFetch(url)
 
 	// getting drinks
@@ -52,9 +52,17 @@ const Drinks = () => {
 					</article>
 				})
 				:
-				<h3 className="empty">
-					no matching cocktails found...
-				</h3>
+				<section className="empty">
+					<h3>
+						no matching cocktails found...
+					</h3>
+					<button 
+						onClick={()=> updateUrl('')} 
+						className="re-fetch btn"
+					>
+						Show Cocktails
+					</button>
+				</section>
 			}
 		</section>
 	)
