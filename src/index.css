@@ -31,7 +31,11 @@ html {
 
 .home {
 	padding: 5rem 2rem;
-	background-color: #e6f4ff;
+	background-color: #eee;
+}
+
+.container {
+	background-color: #eee;
 }
 
 img {
@@ -66,10 +70,6 @@ img {
 	margin-top: 1rem;
 }
 
-.nav-links li {
-	padding: 0.5rem 0;
-}
-
 .nav-links a {
 	text-decoration: none;
 	color: #555;
@@ -78,6 +78,8 @@ img {
 	font-size: 0.95rem;
 	transition: 0.4s;
 	padding: inherit;
+	display: block;
+	padding: 0.5rem 0;
 }
 
 .nav-links a:hover {
@@ -101,7 +103,7 @@ img {
 	border: none;
 	background: transparent;
 	font-size: 2rem;
-	padding: 20px 12px 12px 20px;
+	padding: 20px 8px 8px 20px;
 	display: grid;
 	place-items: center;
 	color: #0094fe;
@@ -133,7 +135,7 @@ img {
 	border-bottom-right-radius: 0;
 	border-top-right-radius: 0;
 	width: 100%;
-	background-color: #e6f4ff;
+	background-color: #eee;
 }
 
 .search-btn {
