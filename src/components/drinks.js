@@ -38,7 +38,9 @@ const Drinks = () => {
 						glass
 					} = drink
 					return <article key={id} className="drink">
-						<img src={image} alt={name} />
+						<div className="photo-container">
+							<img src={image} alt={name} />
+						</div>
 						<div className="info-wrap">
 							<h2 className="name">{name}</h2>
 							<p className="glass">{glass}</p>

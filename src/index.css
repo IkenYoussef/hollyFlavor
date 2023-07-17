@@ -1,8 +1,10 @@
-/* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
 
 html {
 	scroll-behavior: smooth;
+}
+
+body {
+	background-color: #e6f4ff;
 }
 
 * {
@@ -17,6 +19,7 @@ html {
 	border: none;
 	border-radius: 3px;
 	color: #fff;
+	cursor: pointer;
 }
 
 .btn a {
@@ -30,55 +33,60 @@ html {
 	padding: 6px 12px;
 }
 
+.home {
+	margin: 0 2rem;
+	padding: 5rem 2rem;
+}
+
 img {
 	max-width: 100%;
+	object-fit: cover;
 }
 
 /* navbar */
 .navbar {
-	padding: 2rem 0;
-}
-
-.brand-name {
-	text-align: center;
-	margin: 0;
-	transform: scaleY(1.1);
+	align-items: center;
+	margin: 0 2rem;
+	padding: 1.5rem 2rem;
 }
 
 .brand-name a {
-	font-family: 'Source Code Pro', monospace;
-	letter-spacing: 4px;
+	letter-spacing: 2px;
 	text-decoration: none;
-	color: #5ABF7E;
+	color: #0094fe;
 	margin: 0;
 	font-weight: bold;
-	font-size: 2rem;
-	text-shadow: 0 0 100px #1b3926;
+	font-size: 1.7rem;
 }
 
 .nav-links {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	text-align: center;
-	margin: 1.5rem 0;
+	display: flex;
+	gap: .5rem;
+	flex-direction: column;
+	margin-top: 1rem;
 }
 
 .nav-links li {
-	display: inline-block;
-	width: 8rem;
-	padding: 1rem 0;
+	padding: 0.5rem 0;
 }
 
 .nav-links a {
 	text-decoration: none;
-	color: #888;
+	color: #555;
 	text-transform: capitalize;
 	letter-spacing: 2px;
-	font-weight: bold;
-	font-size: 0.8rem;
-	padding: 1rem;
+	font-size: 0.95rem;
+	transition: 0.4s;
+	padding: inherit;
 }
+
+.nav-links a:hover {
+	color: #0094fe;
+}
+
 
 /* back top */
 .container {
@@ -96,11 +104,12 @@ img {
 	border: none;
 	background: transparent;
 	font-size: 2rem;
-	padding: 12px;
+	padding: 20px 12px 12px 20px;
 	display: grid;
 	place-items: center;
 	color: #0094fe;
 	transform: translateY(100%);
+	cursor: pointer;
 }
 
 .show-back-top {
@@ -111,59 +120,75 @@ img {
 
 /* search box */
 .search-box {
-	padding: 2rem 0;
-	text-align: center;
+	display: flex;
+	padding: 2rem 2.5rem;
+	border-radius: 3px;
+	margin: 3rem 0;
+	margin-bottom: 6rem;
+	box-shadow: 0 0.1rem .5rem 0 #bbb;
 }
 
 .search-field {
 	border: none;
-	box-shadow: 0 0px 0px 1px #aaa;
-	padding: 3px 8px;
+	padding: 2px 8px;
 	border-radius: 3px;
-}
-
-.search-field:focus {
-	outline-color: #000;
+	border-bottom-right-radius: 0;
+	border-top-right-radius: 0;
+	width: 100%;
+	background-color: #e6f4ff;
 }
 
 .search-btn {
-	margin-left: 5px;
-	font-family: 'Source Code Pro';
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+}
+
+/* drinks */
+.drinks {
+	display: grid;
+	place-items: center;
+	grid-gap: 5rem 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
 }
 
 /* drink */
 .drink {
-	margin: 4rem 2rem;
 	display: grid;
-	border-radius: 5px;
+	border-radius: 3px;
 	overflow: hidden;
-	box-shadow: 0 2px 3px 0px #eee;
+	box-shadow: 0 0.1rem .5rem 0 #bbb;
+}
+
+.photo-container {
+	max-height: 300px;
+	overflow: hidden;
+	object-fit: cover;
 }
 
 .info-wrap {
-	padding: 1rem;
+	padding: 1.5rem;
 }
 
-.drinks .name {
+.drink.name {
 	font-size: 1.5rem;
 	letter-spacing: 2px;
-	color: #6bc58b;
+	color: #000;
 }
 
 .glass {
-	font-size: 0.9rem;
-	letter-spacing: 1px;
-	color: #aaa;
-	text-transform: lowercase;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	color: #000;
+	text-transform: capitalize;
 	margin-top: 16px;
+
 }
 
 .alcoholic {
 	font-weight: lighter;
 	letter-spacing: 2px;
-	color: #888;
+	color: #000;
 	font-size: 0.9rem;
-	font-family: 'Source Code Pro', monospace;
 	margin-top: 8px;
 }
 
@@ -243,7 +268,7 @@ img {
 /* active */
 
 .active {
-	color: #1b3926 !important;
+	color: #0094fe !important;
 	background-size: 100%;
 }
 
@@ -255,7 +280,6 @@ img {
 
 .empty h3 {
 	font-size: 1rem;
-	font-weight: lighter;
 	letter-spacing: 2px;
 	color: #555;
 }
@@ -265,4 +289,19 @@ img {
 	padding: 6px 12px;
 	margin-top: 2rem;
 	letter-spacing: 1px;
+}
+
+@media screen and (min-width: 375px) {
+	
+}
+
+@media screen and (min-width: 650px) {
+	.search-field {
+		font-size: 1rem;
+		padding: 5px 8px;
+	}
+
+	.search-btn {
+		padding: 6px 12px;
+	}
 }
