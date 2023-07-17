@@ -3,10 +3,6 @@ html {
 	scroll-behavior: smooth;
 }
 
-body {
-	background-color: #e6f4ff;
-}
-
 * {
 	margin: 0;
 	font-family: 'Tajawal', sans-serif;
@@ -34,8 +30,8 @@ body {
 }
 
 .home {
-	margin: 0 2rem;
 	padding: 5rem 2rem;
+	background-color: #e6f4ff;
 }
 
 img {
@@ -48,6 +44,7 @@ img {
 	align-items: center;
 	margin: 0 2rem;
 	padding: 1.5rem 2rem;
+	background-color: #fff;
 }
 
 .brand-name a {
@@ -126,6 +123,7 @@ img {
 	margin: 3rem 0;
 	margin-bottom: 6rem;
 	box-shadow: 0 0.1rem .5rem 0 #bbb;
+	background-color: #fff;
 }
 
 .search-field {
@@ -167,6 +165,7 @@ img {
 
 .info-wrap {
 	padding: 1.5rem;
+	background-color: #fff;
 }
 
 .drink.name {
@@ -291,8 +290,10 @@ img {
 	letter-spacing: 1px;
 }
 
-@media screen and (min-width: 375px) {
-	
+@media screen and (min-width: 400px) {
+	.home {
+		margin: 0 2rem;
+	}
 }
 
 @media screen and (min-width: 650px) {
