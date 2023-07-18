@@ -1,4 +1,3 @@
-
 html {
 	scroll-behavior: smooth;
 }
@@ -31,11 +30,12 @@ html {
 
 .home {
 	padding: 5rem 2rem;
-	background-color: #eee;
+	background-color: #fafafa;
 }
 
 .container {
-	background-color: #eee;
+	background-color: #fafafa;
+	min-height: 100vh;
 }
 
 img {
@@ -43,12 +43,16 @@ img {
 	object-fit: cover;
 }
 
+.Loader {
+	padding: 0;
+	margin: 0;
+}
+
 /* navbar */
 .navbar {
 	align-items: center;
 	margin: 0 2rem;
 	padding: 1.5rem 2rem;
-	background-color: #fff;
 }
 
 .brand-name a {
@@ -57,7 +61,7 @@ img {
 	color: #0094fe;
 	margin: 0;
 	font-weight: bold;
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 }
 
 .nav-links {
@@ -135,7 +139,7 @@ img {
 	border-bottom-right-radius: 0;
 	border-top-right-radius: 0;
 	width: 100%;
-	background-color: #eee;
+	background-color: #fafafa;
 }
 
 .search-btn {
@@ -167,30 +171,30 @@ img {
 
 .info-wrap {
 	padding: 1.5rem;
-	background-color: #fff;
 }
 
-.drink.name {
-	font-size: 1.5rem;
-	letter-spacing: 2px;
+.drink .name {
+	letter-spacing: 1px;
 	color: #000;
+	font-size: 30px;
+	font-size: calc(100% + .8vw);
+
 }
 
 .glass {
-	font-size: 1rem;
 	letter-spacing: 2px;
 	color: #000;
 	text-transform: capitalize;
-	margin-top: 16px;
-
+	margin-top: 3px;
+	font-size: calc(100% + .2vw);
 }
 
 .alcoholic {
 	font-weight: lighter;
-	letter-spacing: 2px;
-	color: #000;
-	font-size: 0.9rem;
-	margin-top: 8px;
+	letter-spacing: 1px;
+	color: #777;
+	margin-top: 5px;
+	font-size: calc(100% + .08vw);
 }
 
 .details-btn {
@@ -199,7 +203,7 @@ img {
 	letter-spacing: 2px;
 	font-size: .9rem;
 	padding: 6px 14px;
-	margin-top: 24px;
+	margin-top: 12px;
 }
 
 /* single drink page */
@@ -276,7 +280,6 @@ img {
 /* empty */
 .empty {
 	text-align: center;
-	padding: 2rem 0;
 }
 
 .empty h3 {
@@ -299,6 +302,21 @@ img {
 }
 
 @media screen and (min-width: 650px) {
+	.navbar {
+		display: flex;
+	}
+
+	.nav-links {
+		flex-direction: row;
+		margin: 0;
+		margin-left: auto;
+		gap: 1rem;
+	}
+
+	.nav-links a {
+		display: inline;
+	}
+
 	.search-field {
 		font-size: 1rem;
 		padding: 5px 8px;
@@ -306,5 +324,6 @@ img {
 
 	.search-btn {
 		padding: 6px 12px;
+		letter-spacing: 1px;
 	}
 }

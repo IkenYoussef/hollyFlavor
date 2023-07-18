@@ -1,0 +1,3 @@
+-fix spaces between text in drink
+-look up single drink on mixmaster(the alignement of things)
+-look up about page too for the alignement.
