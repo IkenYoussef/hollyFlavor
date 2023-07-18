@@ -44,9 +44,9 @@ const Drinks = () => {
 						<div className="info-wrap">
 							<h2 className="name">{name}</h2>
 							<p className="glass">{glass}</p>
-							<h4 className="alcoholic">
+							<p className="alcoholic">
 								{alcoholic}
-							</h4>
+							</p>
 							<button className="details-btn btn">
 								<Link to={`cocktails/${id}`}>Details</Link>
 							</button>

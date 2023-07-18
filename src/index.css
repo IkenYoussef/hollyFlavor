@@ -15,11 +15,17 @@ html {
 	border-radius: 3px;
 	color: #fff;
 	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover {
+	background-color: #0068b2;
 }
 
 .btn a {
 	text-decoration: none;
 	color: inherit;
+	padding: inherit;
 }
 
 .home-btn {
@@ -51,7 +57,6 @@ img {
 /* navbar */
 .navbar {
 	align-items: center;
-	margin: 0 2rem;
 	padding: 1.5rem 2rem;
 }
 
@@ -62,6 +67,7 @@ img {
 	margin: 0;
 	font-weight: bold;
 	font-size: 1.5rem;
+	font-size: calc(100% + .8vw);
 }
 
 .nav-links {
@@ -115,6 +121,10 @@ img {
 	cursor: pointer;
 }
 
+.back-top:hover {
+	color: #0068b2;
+}
+
 .show-back-top {
 	opacity: 1;
 	visibility: visible;
@@ -126,10 +136,11 @@ img {
 	display: flex;
 	padding: 2rem 2.5rem;
 	border-radius: 3px;
-	margin: 3rem 0;
+	margin: 3rem auto;
 	margin-bottom: 6rem;
 	box-shadow: 0 0.1rem .5rem 0 #bbb;
 	background-color: #fff;
+	max-width: 560px;
 }
 
 .search-field {
@@ -151,8 +162,8 @@ img {
 .drinks {
 	display: grid;
 	place-items: center;
-	grid-gap: 5rem 2rem;
-	grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+	grid-gap: 2rem;
+	grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
 }
 
 /* drink */
@@ -176,8 +187,7 @@ img {
 .drink .name {
 	letter-spacing: 1px;
 	color: #000;
-	font-size: 30px;
-	font-size: calc(100% + .8vw);
+	font-size: calc(100% + .5vw);
 
 }
 
@@ -186,15 +196,14 @@ img {
 	color: #000;
 	text-transform: capitalize;
 	margin-top: 3px;
-	font-size: calc(100% + .2vw);
+	font-size: calc(99% + .05vw);
 }
 
 .alcoholic {
-	font-weight: lighter;
 	letter-spacing: 1px;
 	color: #777;
 	margin-top: 5px;
-	font-size: calc(100% + .08vw);
+	font-size: calc(80% + 0.1vw);
 }
 
 .details-btn {
@@ -202,7 +211,7 @@ img {
 	color: #fff;
 	letter-spacing: 2px;
 	font-size: .9rem;
-	padding: 6px 14px;
+	padding: 7px 6px;
 	margin-top: 12px;
 }
 
@@ -296,12 +305,12 @@ img {
 }
 
 @media screen and (min-width: 400px) {
-	.home {
+	.home, .navbar {
 		margin: 0 2rem;
 	}
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 768px) {
 	.navbar {
 		display: flex;
 	}
@@ -325,5 +334,12 @@ img {
 	.search-btn {
 		padding: 6px 12px;
 		letter-spacing: 1px;
+	}
+}
+
+@media screen and (min-width: 1250px) {
+	.navbar, .home {
+		max-width: 1056px;
+		margin: auto;
 	}
 }
