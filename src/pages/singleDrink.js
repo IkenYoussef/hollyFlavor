@@ -44,50 +44,50 @@ const SingleDrink = () => {
 				<article className="single-drink-info">
 					<aside className="property">
 						<h3 className="prop-name">
-							name
+							name :
 						</h3>
 						<h3 className="prop-value">
-							: {name}
+							{name}
 						</h3>
 					</aside>
 					<aside className="property">
 						<h3 className="prop-name">
-							category
+							category :
 						</h3>
 						<h3 className="prop-value">
-							: {category}
+							{category}
 						</h3>
 					</aside>
 					<aside className="property">
 						<h3 className="prop-name">
-							info
+							info :
 						</h3>
 						<h3 className="prop-value">
-							: {alcoholic}
+							{alcoholic}
 						</h3>
 					</aside>
 					<aside className="property">
 						<h3 className="prop-name">
-							glass
+							glass :
 						</h3>
 						<h3 className="prop-value">
-							: {glass}
+							{glass}
 						</h3>
 					</aside>
 					<aside className="property">
 						<h3 className="prop-name">
-							ingredients
+							ingredients :
 						</h3>
 						<h3 className="prop-value">
-							: {ingredients}
+							{ingredients}
 						</h3>
 					</aside>
 					<aside className="property">
 						<h3 className="prop-name">
-							instructions
+							instructions :
 						</h3>
 						<h3 className="prop-value">
-							: {instructions}
+							{instructions}
 						</h3>
 					</aside>
 				</article>
