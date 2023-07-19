@@ -37,6 +37,7 @@ html {
 .home {
 	padding: 5rem 2rem;
 	background-color: #fafafa;
+	margin: 4vw;
 }
 
 .container {
@@ -58,6 +59,7 @@ img {
 .navbar {
 	align-items: center;
 	padding: 1.5rem 2rem;
+	margin: 4vw;
 }
 
 .brand-name a {
@@ -157,6 +159,7 @@ img {
 .search-btn {
 	border-bottom-left-radius: 0;
 	border-top-left-radius: 0;
+	box-shadow: 0 0 0px .025rem #0094fe;
 }
 
 /* drinks */
@@ -312,12 +315,6 @@ img {
 	padding: 6px 12px;
 	margin-top: 2rem;
 	letter-spacing: 1px;
-}
-
-@media screen and (min-width: 400px) {
-	.home, .navbar {
-		margin: 0 2rem;
-	}
 }
 
 @media screen and (min-width: 768px) {
