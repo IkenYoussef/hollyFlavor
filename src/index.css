@@ -1,5 +1,7 @@
 html {
 	scroll-behavior: smooth;
+	margin: 0;
+	background-color: #fafafa;
 }
 
 * {
@@ -36,13 +38,7 @@ html {
 
 .home {
 	padding: 5rem 2rem;
-	background-color: #fafafa;
-	margin: 4vw;
-}
-
-.container {
-	background-color: #fafafa;
-	min-height: 100vh;
+	margin: 0 4vw;
 }
 
 img {
@@ -56,10 +52,15 @@ img {
 }
 
 /* navbar */
+.nav-container {
+	background-color: #fff;
+}
+
 .navbar {
 	align-items: center;
 	padding: 1.5rem 2rem;
-	margin: 4vw;
+	margin: 0 4vw;
+	background-color: #fff;
 }
 
 .brand-name a {
@@ -100,7 +101,7 @@ img {
 
 
 /* back top */
-.container {
+.home-container {
 	position: relative;
 	overflow: hidden;
 }
@@ -186,6 +187,7 @@ img {
 
 .info-wrap {
 	padding: 1.5rem;
+	background-color: #fff;
 }
 
 .drink .name {
@@ -279,17 +281,19 @@ img {
 
 /* about */
 .about {
-	padding: 0 1rem;
+	padding: 5rem 2rem;
+	margin: 0 4vw;
 }
 
 .about-title {
-	color: #5abf7a;
+	font-weight: lighter;
+	letter-spacing: 1px;
 }
 
 .about-desc {
-	padding: 1rem 0;
-	color: #000;
-	line-height: 1.5rem;
+	margin-top: 2rem;
+	color: #7d7d7d;
+	line-height: 2rem;
 }
 
 /* active */
@@ -317,6 +321,30 @@ img {
 	letter-spacing: 1px;
 }
 
+/* error page */
+.error-page {
+	padding: 5rem 2rem;
+	margin: 0 4vw;
+	text-align: center;
+}
+
+.error-page h2 {
+	margin-top: 4rem;
+	font-weight: lighter;
+	letter-spacing: 1px;
+}
+
+.error-page p {
+	margin-top: 1rem;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	color: #7b7b7b;
+}
+
+.error-page .btn {
+	margin-top: 3rem;
+}
+
 @media screen and (min-width: 768px) {
 	.navbar {
 		display: flex;
@@ -342,6 +370,11 @@ img {
 		padding: 6px 12px;
 		letter-spacing: 1px;
 	}
+
+	.about-title, .error-page h2 {
+		font-size: calc(100% + 1.3vw);
+		letter-spacing: 2px;
+	}
 }
 
 @media screen and (min-width: 995px) {
@@ -358,7 +391,7 @@ img {
 }
 
 @media screen and (min-width: 1250px) {
-	.navbar, .home, .single-drink-page {
+	.navbar, .home, .single-drink-page, .about, .error-page {
 		max-width: 1056px;
 		margin: auto;
 	}
