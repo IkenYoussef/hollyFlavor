@@ -37,7 +37,7 @@ const Home = () => {
 	},[])
 
 	return (
-		<main className="container">
+		<main className="page-container">
 			<section className="home">
 				<form 
 					className="search-box" 

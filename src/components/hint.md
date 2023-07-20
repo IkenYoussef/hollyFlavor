@@ -1,1 +1,1 @@
--look up about page too for the alignement.
+-handling the  error page
